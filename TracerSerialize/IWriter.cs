@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tracer
+namespace TracerSerialize
 {
-    public interface ITraceResultSerialization
+    interface IWriter
     {
-        string Serialize(TraceResult result);
+        void Write(string text);
     }
 }
